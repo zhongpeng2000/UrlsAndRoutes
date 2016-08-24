@@ -12,8 +12,7 @@ namespace UrlsAndRoutes
         public static void RegisterRoutes(RouteCollection routes)
         {
 
-            Route myRoute = new Route("{controller}/{action}", new MvcRouteHandler());
-            routes.Add("MyRoute", myRoute);
+            routes.MapRoute("MyRoute", "{controller}/{action}", new  { controller = "Home", action = "Index" });
 
             //routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 

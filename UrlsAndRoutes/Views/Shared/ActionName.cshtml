@@ -17,5 +17,13 @@
     <div>
         The Controller is : @ViewBag.Action
     </div>
+
+    <div>
+        The custom val is : @ViewBag.CustomVariable
+    </div>
+    <div>@Html.ActionLink("This is an outgoing URL","CustomVariable")</div>
+    <div>@Html.ActionLink("This is an outgoing URL", "Index","Admin")</div>
+    <div>@Html.ActionLink("This is an outgoing URL", "Index", "Customer")</div>
+
 </body>
 </html>

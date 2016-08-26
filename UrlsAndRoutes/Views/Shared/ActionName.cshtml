@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -24,6 +24,10 @@
     <div>@Html.ActionLink("This is an outgoing URL","CustomVariable")</div>
     <div>@Html.ActionLink("This is an outgoing URL", "Index","Admin")</div>
     <div>@Html.ActionLink("This is an outgoing URL", "Index", "Customer")</div>
+
+    <div>@Html.ActionLink("This is an outgoing URL", "Index", "Home", null, new { id="myAnchorID", @class = "myCSSClass"}) </div>
+
+    <div>@Html.ActionLink("This is an outgoing URL", "Index", "Home", "https","myserver.mydomain.com","myFragmentName", new { id = "MyId"}, new { id = "myAnchorID", @class = "myCSSClass" }) </div>
 
 </body>
 </html>
